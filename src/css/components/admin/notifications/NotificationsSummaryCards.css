@@ -1,0 +1,72 @@
+.noti-summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.noti-summary-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.noti-summary-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.noti-summary-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Card Specific Colors */
+.noti-icon-bg-green {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.noti-icon-bg-yellow {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.noti-icon-bg-red {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+
+.noti-summary-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.noti-summary-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.noti-summary-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.2;
+}
+
+@media (max-width: 640px) {
+  .noti-summary-cards {
+    grid-template-columns: 1fr;
+  }
+}

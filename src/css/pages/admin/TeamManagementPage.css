@@ -1,0 +1,111 @@
+.admin-team-page {
+  padding: 24px;
+  background-color: #F8FAFC;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.team-split-layout {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start; /* Prevent stretching */
+}
+
+/* Left Panel Sizing */
+.team-left-panel {
+  width: 250px;
+  flex-shrink: 0; /* Never shrink the vertical tree */
+}
+
+/* Right Content Scaling */
+.team-right-panel {
+  flex: 1; /* Take up all remaining space */
+  display: flex;
+  flex-direction: column;
+  min-width: 0; /* Prevent flexbox blowout */
+}
+
+.team-right-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.team-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.team-top-label {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #EA580C; /* Matching primary CTA brand color */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.admin-page-title {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: #0F172A;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.admin-page-subtitle {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #64748B;
+  margin: 0;
+}
+
+.team-assign-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #EA580C;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(234, 88, 12, 0.2);
+}
+
+.team-assign-btn:hover {
+  background-color: #C2410C;
+  transform: translateY(-1px);
+}
+
+.team-content-stream {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .team-split-layout {
+    flex-direction: column;
+  }
+  
+  .team-left-panel {
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  
+  .team-right-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

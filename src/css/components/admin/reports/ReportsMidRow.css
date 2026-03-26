@@ -1,0 +1,138 @@
+.reports-mid-grid {
+  display: flex;
+  gap: 24px;
+}
+
+.reports-mid-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-2 { flex: 2; }
+.flex-1 { flex: 1; }
+
+.mid-card-title {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1E293B;
+  margin: 0 0 24px 0;
+}
+
+/* Horizontal Bar Progress Charts */
+.dep-hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dep-hour-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dep-row-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dep-name-lbl {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.dep-hrs-val {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #94A3B8;
+}
+
+.dep-progress-track {
+  width: 100%;
+  height: 8px;
+  background-color: #F1F5F9;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.dep-progress-fill {
+  height: 100%;
+  background-color: #EA580C; /* All bars using branding orange */
+  border-radius: 4px;
+  transition: width 0.8s ease;
+}
+
+
+/* Shortcuts Formatting */
+.shortcuts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.shortcut-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.shortcut-item:hover {
+  background-color: #F8FAFC;
+  border-color: #CBD5E1;
+}
+
+.shortcut-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bg-green-light { background-color: #DCFCE7; }
+.text-green { color: #16A34A; }
+
+.bg-orange-light { background-color: #FFF7ED; }
+.text-orange { color: #EA580C; }
+
+.shortcut-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.shortcut-title {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1E293B;
+}
+
+.shortcut-sub {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #94A3B8;
+}
+
+@media (max-width: 1024px) {
+  .reports-mid-grid {
+    flex-direction: column;
+  }
+}

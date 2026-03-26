@@ -1,0 +1,168 @@
+.sidebar {
+    width: 250px;
+    background-color: var(--sidebar-bg);
+    color: var(--sidebar-text);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 24px 0;
+    flex-shrink: 0;
+}
+
+.sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 24px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.logo-icon {
+    width: 28px;
+    height: 28px;
+    background-color: var(--orange);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.logo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-grid span {
+    background-color: white;
+    border-radius: 2px;
+}
+
+.logo-grid span:nth-child(2),
+.logo-grid span:nth-child(3),
+.logo-grid span:nth-child(4) {
+    opacity: 0.8;
+}
+
+.sidebar-logo h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-nav {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sidebar-nav .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sidebar-nav a.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar-nav a.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    color: var(--sidebar-active-text);
+}
+
+.sidebar-nav a.nav-item.active {
+    background-color: var(--sidebar-active-bg);
+    color: var(--orange);
+    border-left-color: var(--orange);
+}
+
+.sidebar-section {
+    margin-top: 32px;
+}
+
+.section-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6B7280;
+    padding: 0 24px;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+}
+
+.section-title_1 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #6B7280;
+    /* Restoring the original muted gray color to match the design */
+    padding: 0 24px;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+}
+
+.sidebar-footer {
+    padding: 0 24px;
+    margin-top: auto;
+}
+
+.usage-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.usage-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 4px;
+    border-radius: 2px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    background-color: var(--orange);
+    height: 100%;
+    border-radius: 2px;
+}
+
+.usage-text {
+    font-size: 0.7rem;
+    color: #6B7280;
+}
+
+/* Scrollbar for sidebar nav */
+.sidebar-nav::-webkit-scrollbar {
+    width: 4px;
+}
+
+.sidebar-nav::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sidebar-nav::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}

@@ -1,0 +1,41 @@
+.apply-leave-page {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 80px;
+    /* Space for floating tip */
+    position: relative;
+    min-height: calc(100vh - 120px);
+}
+
+.al-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.al-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 6px;
+}
+
+.al-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.al-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.al-main-col {
+    width: 100%;
+    max-width: 800px;
+    /* Constrain width of form section for better reading */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

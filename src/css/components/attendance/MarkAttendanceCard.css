@@ -1,0 +1,159 @@
+.mark-attend-card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 32px;
+}
+
+.mac-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mac-title-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mac-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.mac-badges {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.mac-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #4B5563;
+}
+
+.bg-gray {
+    background-color: #F3F4F6;
+}
+
+.mac-status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #DCFCE7;
+    color: #166534;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.mac-actions {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: flex-end;
+}
+
+.mac-location {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.mac-label {
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.mac-select {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-white);
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--text-main);
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    /* Custom arrow for dropdown */
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+    padding-right: 48px;
+}
+
+.mac-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-mark-in {
+    display: flex;
+    align-items: center;
+    background-color: var(--orange);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.2);
+}
+
+.btn-mark-in:hover {
+    background-color: #EA580C;
+}
+
+.btn-mark-out {
+    display: flex;
+    align-items: center;
+    background-color: #F1F5F9;
+    color: var(--text-main);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.btn-mark-out:hover {
+    background-color: #E2E8F0;
+}
+
+.mac-notification {
+    background: linear-gradient(90deg, #FFEDD5 0%, #FFF7ED 100%);
+    border-radius: 8px;
+    padding: 16px 20px;
+    color: #9A3412;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border-left: 4px solid var(--orange);
+}
+
+.mr-1 {
+    margin-right: 4px;
+}
+
+.mr-2 {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .mac-actions {
+        grid-template-columns: 1fr;
+        align-items: stretch;
+    }
+}

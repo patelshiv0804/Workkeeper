@@ -1,0 +1,70 @@
+.shift-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.shift-summary-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.summary-icon-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.summary-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.summary-label {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 13px;
+  color: #64748B;
+  font-weight: 500;
+}
+
+.summary-value {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Color Variations */
+.orange-box { background-color: #FFF7ED; }
+.icon-orange { color: #EA580C; }
+.orange-text { color: #EA580C; }
+
+.green-box { background-color: #F0FDF4; }
+.icon-green { color: #22C55E; }
+.green-text { color: #22C55E; }
+
+.yellow-box { background-color: #FFFBEB; }
+.icon-yellow { color: #F59E0B; }
+.yellow-text { color: #F59E0B; }
+
+@media (max-width: 1024px) {
+  .shift-summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .shift-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}

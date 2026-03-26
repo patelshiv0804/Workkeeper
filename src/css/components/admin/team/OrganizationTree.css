@@ -1,0 +1,153 @@
+.org-tree-panel {
+  display: flex;
+  flex-direction: column;
+  padding-right: 16px; 
+}
+
+.org-tree-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 24px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.org-title-label {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #94A3B8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.expand-collapse-btn {
+  background: transparent;
+  border: none;
+  color: #94A3B8;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.expand-collapse-btn:hover {
+  background-color: #F1F5F9;
+  color: #64748B;
+}
+
+.org-tree-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.org-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.org-group-header:hover {
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.org-group-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.folder-icon {
+  color: #64748B;
+}
+
+.org-count {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748B;
+  background-color: #F1F5F9;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.org-group-children {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+  position: relative;
+}
+
+/* Branch Logic */
+.org-group-children::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 20px;
+  bottom: 18px;
+  width: 1px;
+  background-color: #E2E8F0;
+}
+
+.org-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px 10px 42px;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748B;
+  cursor: pointer;
+  border-radius: 8px;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.org-item:hover {
+  color: #0F172A;
+}
+
+/* Horizontal branch connector */
+.org-branch-line {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  width: 12px;
+  height: 1px;
+  background-color: #E2E8F0;
+}
+
+/* Active Highlight Styling */
+.org-item.active {
+  background-color: #FFF7ED;
+  color: #EA580C;
+  font-weight: 600;
+}
+
+.org-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10%;
+  bottom: 10%;
+  width: 3px;
+  background-color: #EA580C;
+  border-radius: 0 4px 4px 0;
+}
+
+.org-item.active .org-branch-line {
+  background-color: #FDBA74;
+}

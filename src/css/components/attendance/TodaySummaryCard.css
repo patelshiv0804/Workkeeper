@@ -1,0 +1,115 @@
+.summary-card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.summary-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 24px;
+}
+
+.summary-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.summary-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.summary-item.s-item-progress {
+    align-items: flex-start;
+}
+
+.s-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.s-bg-green {
+    background-color: #DCFCE7;
+}
+
+.s-icon-green {
+    color: #166534;
+}
+
+.s-bg-yellow {
+    background-color: #FEF3C7;
+}
+
+.s-icon-yellow {
+    color: #B45309;
+}
+
+.s-bg-orange {
+    background-color: #FFEDD5;
+}
+
+.s-icon-orange {
+    color: #C2410C;
+}
+
+.s-bg-blue {
+    background-color: #DBEAFE;
+}
+
+.s-icon-blue {
+    color: #1D4ED8;
+}
+
+.summary-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    justify-content: center;
+}
+
+.summary-info.s-info-full {
+    width: 100%;
+}
+
+.s-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.s-value {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+/* Progress layout specific to hours */
+.s-progress-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 4px;
+}
+
+.s-progress-track {
+    flex-grow: 1;
+    height: 4px;
+    background-color: var(--border-color);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.s-progress-fill {
+    background-color: var(--orange);
+    height: 100%;
+    border-radius: 2px;
+}

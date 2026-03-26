@@ -1,0 +1,237 @@
+.roles-table-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.roles-table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.roles-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.roles-table th {
+  padding: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #64748b;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+.roles-table td {
+  padding: 16px;
+  font-size: 14px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.roles-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.roles-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.roles-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.roles-icon-wrapper {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.bg-orange-light {
+  background-color: #ffedd5;
+  color: #ea580c;
+}
+
+.bg-green-light {
+  background-color: #dcfce7;
+  color: #22c55e;
+}
+
+.bg-gray-light {
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+
+.roles-desc-cell {
+  color: #64748b;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.roles-permissions-cell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 220px;
+}
+
+.permission-tag {
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.permission-tag.full-access {
+  background-color: #ffedd5;
+  color: #ea580c;
+}
+
+.permission-tag.standard {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.roles-users-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar-group {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-item {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -10px;
+  position: relative;
+  overflow: hidden;
+  background-color: #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.avatar-item:first-child {
+  margin-left: 0;
+}
+
+.avatar-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-count {
+  font-size: 11px;
+  font-weight: 600;
+  background-color: #f1f5f9;
+  color: #64748b;
+}
+
+.roles-users-text {
+  font-size: 13px;
+  color: #475569;
+  display: flex;
+  flex-direction: column;
+}
+
+.roles-users-number {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* Pagination Adjustments for Roles Table Footer */
+.roles-table-footer {
+  padding: 16px;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.roles-footer-text {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.roles-pagination-btns {
+  display: flex;
+  gap: 6px;
+}
+
+.roles-page-btn {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roles-page-btn:hover:not(:disabled) {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.roles-page-btn.active-page {
+  background-color: #ea580c; /* Orange matching design */
+  color: white;
+  border-color: #ea580c;
+}
+
+.roles-page-btn.active-page:hover {
+  background-color: #c2410c;
+}
+
+.roles-nav-btn {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roles-nav-btn:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}

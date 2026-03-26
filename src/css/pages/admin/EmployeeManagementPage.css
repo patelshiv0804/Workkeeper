@@ -1,0 +1,33 @@
+.admin-emp-page {
+  padding: 24px;
+  background-color: #F8FAFC;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.admin-emp-header {
+  margin-bottom: 24px;
+}
+
+.admin-page-title {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1E293B;
+  margin: 0 0 8px 0;
+}
+
+.admin-page-subtitle {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #64748B;
+  margin: 0;
+}
+
+.admin-emp-filters {
+  margin-bottom: 24px;
+}
+
+.admin-emp-table-section {
+  width: 100%;
+}

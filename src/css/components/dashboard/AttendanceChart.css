@@ -1,0 +1,107 @@
+.chart-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+}
+
+.chart-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 4px;
+}
+
+.chart-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.chart-legend {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.legend-square {
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+}
+
+.legend-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+}
+
+.orange-bg {
+    background-color: var(--orange);
+}
+
+.gray-bg {
+    background-color: #F3F4F6;
+}
+
+.chart-container {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+    margin-top: auto;
+    gap: 8px;
+    /* Slight gap based on visual preference but can be 0 */
+}
+
+/* If the screenshot bars touch exactly, set gap to 0 and remove border radius from inner sides */
+/* For a cleaner modern look matching the image feel, a tiny gap might look better, or 0 gap with border-radius only on top */
+
+.chart-bar-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    height: 100%;
+}
+
+.chart-bar-bg {
+    width: 100%;
+    height: 150px;
+    background-color: #F9FAFB;
+    border-radius: 4px 4px 0 0;
+    display: flex;
+    align-items: flex-end;
+}
+
+.chart-bar-fill {
+    width: 100%;
+    background-color: var(--orange);
+    border-radius: 4px 4px 0 0;
+    transition: height 0.5s ease;
+}
+
+.chart-day-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 640px) {
+    .chart-header {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

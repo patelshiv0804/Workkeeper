@@ -1,0 +1,99 @@
+.leave-balances-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.leave-card {
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.leave-label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    margin-bottom: 12px;
+}
+
+.leave-value {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.orange-text {
+    color: var(--text-main);
+}
+
+.yellow-text {
+    color: var(--text-main);
+}
+
+.indigo-text {
+    color: var(--text-main);
+}
+
+.red-text {
+    color: var(--danger);
+}
+
+.leave-bar-bg {
+    height: 4px;
+    background-color: var(--border-color);
+    border-radius: 2px;
+    margin-top: auto;
+    overflow: hidden;
+}
+
+.leave-bar-fill {
+    height: 100%;
+    border-radius: 2px;
+}
+
+/* Hardcoded widths based on visual proportions */
+.leave-card:nth-child(1) .leave-bar-fill {
+    width: 45%;
+}
+
+.leave-card:nth-child(2) .leave-bar-fill {
+    width: 15%;
+}
+
+.leave-card:nth-child(3) .leave-bar-fill {
+    width: 10%;
+}
+
+.leave-card:nth-child(4) .leave-bar-fill {
+    width: 0%;
+}
+
+.orange-bg {
+    background-color: var(--orange);
+}
+
+.yellow-bg {
+    background-color: var(--warning);
+}
+
+.indigo-bg {
+    background-color: var(--primary);
+}
+
+.red-bg {
+    background-color: var(--danger);
+}
+
+@media (max-width: 1024px) {
+    .leave-balances-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .leave-balances-grid {
+        grid-template-columns: 1fr;
+    }
+}

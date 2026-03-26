@@ -1,0 +1,115 @@
+.roles-filter-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.roles-filter-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.roles-search-box {
+  position: relative;
+  flex: 1;
+  max-width: 320px;
+}
+
+.roles-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+.roles-search-box input {
+  width: 100%;
+  padding: 10px 12px 10px 40px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.roles-search-box input:focus {
+  border-color: #4f46e5;
+}
+
+.roles-dropdown {
+  position: relative;
+  min-width: 180px;
+}
+
+.roles-dropdown select {
+  width: 100%;
+  padding: 10px 36px 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #334155;
+  background-color: white;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.roles-dropdown select:focus {
+  border-color: #4f46e5;
+}
+
+.roles-dropdown-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+  pointer-events: none;
+}
+
+.btn-apply-filters {
+  background-color: white;
+  color: #1a1a1a;
+  border: 1px solid #e2e8f0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.btn-apply-filters:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+@media (max-width: 1024px) {
+  .roles-filter-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .roles-filter-group {
+    flex-wrap: wrap;
+  }
+  
+  .roles-search-box {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  
+  .roles-dropdown {
+    flex: 1;
+  }
+}

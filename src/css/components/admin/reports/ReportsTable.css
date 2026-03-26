@@ -1,0 +1,218 @@
+.reports-table-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.reports-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.rep-table-title {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1E293B;
+  margin: 0;
+}
+
+.rep-view-all {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #EA580C; /* Marketing Orange */
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.rep-view-all:hover {
+  opacity: 0.8;
+}
+
+.reports-table-wrapper {
+  overflow-x: auto;
+  padding: 0 24px;
+}
+
+.rep-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 900px;
+}
+
+.rep-data-table th {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #94A3B8;
+  text-transform: uppercase;
+  padding: 16px 8px;
+  border-bottom: 1px solid #E2E8F0;
+  letter-spacing: 0.5px;
+}
+
+.rep-data-table td {
+  padding: 16px 8px;
+  border-bottom: 1px solid #F1F5F9;
+  vertical-align: middle;
+}
+
+.rep-data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.rep-emp-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rep-emp-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #E2E8F0;
+}
+
+.rep-emp-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rep-emp-name {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1E293B;
+}
+
+.rep-emp-role {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 11px;
+  color: #94A3B8;
+  font-weight: 500;
+}
+
+.rep-dept-col, .rep-att-col, .rep-leave-col {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.rep-hrs-col {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.hrs-normal { color: #EA580C; }
+.hrs-warning { color: #EF4444; } /* Dropping to Red when 0 logic trips */
+
+.rep-status-badge {
+  display: inline-flex;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 9999px; /* Pill format */
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.rep-status-active { background-color: #DCFCE7; color: #16A34A; }
+.rep-status-leave { background-color: #FEF3C7; color: #D97706; }
+.rep-status-inactive { background-color: #F8FAFC; color: #94A3B8; border: 1px solid #E2E8F0; }
+
+.rep-action-btn {
+  background: transparent;
+  border: none;
+  color: #94A3B8;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rep-action-btn:hover {
+  background-color: #F1F5F9;
+  color: #334155;
+}
+
+/* Pagination Specific to Reports Grid */
+.rep-pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-top: 1px solid #F1F5F9;
+}
+
+.rep-pagination-info {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #94A3B8;
+}
+
+.rep-pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rep-page-nav {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+.rep-page-nav:hover {
+  color: #EA580C;
+}
+
+.rep-page-btn {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748B;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rep-page-btn:hover {
+  border-color: #CBD5E1;
+  color: #334155;
+}
+
+.rep-page-btn.active {
+  background-color: #EA580C;
+  border-color: #EA580C;
+  color: #FFFFFF;
+}

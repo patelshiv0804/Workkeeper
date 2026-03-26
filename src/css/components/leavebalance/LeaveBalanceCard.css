@@ -1,0 +1,151 @@
+.balance-card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    /* Slightly larger padding based on design */
+    gap: 20px;
+}
+
+.bc-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+
+.bc-icon-wrapper {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dynamic Icon Wrapper Colors */
+.green-icon {
+    color: var(--success);
+}
+
+.bc-icon-wrapper:has(.green-icon) {
+    background-color: #DCFCE7;
+}
+
+.orange-icon {
+    color: #EA580C;
+}
+
+.bc-icon-wrapper:has(.orange-icon) {
+    background-color: #FFF7ED;
+}
+
+.bc-tag {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 9999px;
+    letter-spacing: 0.05em;
+}
+
+.tag-standard {
+    background-color: #DCFCE7;
+    color: #166534;
+}
+
+.tag-accrued {
+    background-color: #FFEDD5;
+    /* Lighter orange/amber */
+    color: #9A3412;
+}
+
+.bc-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 8px;
+}
+
+.bc-stats-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.bc-stat-col {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.bc-stat-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.bc-stat-value {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.text-default {
+    color: var(--text-main);
+}
+
+.text-success {
+    color: var(--success);
+}
+
+.text-warning {
+    color: #EA580C;
+}
+
+.bc-progress-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: auto;
+    /* Push to bottom if content varies */
+}
+
+.bc-progress-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bc-progress-label,
+.bc-progress-percent {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.bc-progress-label {
+    color: var(--text-muted);
+}
+
+.bc-progress-percent {
+    color: var(--text-main);
+}
+
+.bc-progress-bar-bg {
+    height: 6px;
+    width: 100%;
+    background-color: #F3F4F6;
+    border-radius: 9999px;
+    overflow: hidden;
+}
+
+.bc-progress-fill {
+    height: 100%;
+    border-radius: 9999px;
+}
+
+.fill-green {
+    background-color: var(--success);
+}
+
+.fill-orange {
+    background-color: #EA580C;
+    /* Using a darker orange for visibility */
+}

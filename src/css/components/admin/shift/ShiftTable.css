@@ -1,0 +1,191 @@
+.admin-shift-table-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.shift-table-wrapper {
+  overflow-x: auto;
+  padding: 0 24px;
+}
+
+.shift-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 1100px;
+}
+
+.shift-data-table th {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748B;
+  text-transform: uppercase;
+  padding: 16px 8px;
+  border-bottom: 1px solid #E2E8F0;
+  letter-spacing: 0.5px;
+}
+
+.shift-data-table td {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+  padding: 16px 8px;
+  border-bottom: 1px solid #F1F5F9;
+  vertical-align: middle;
+}
+
+.shift-data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.shift-name-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.shift-icon-wrapper {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background-color: #F8FAFC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shift-name-text {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #1E293B;
+}
+
+.time-col {
+  color: #334155;
+  font-weight: 600 !important;
+  line-height: 1.4;
+}
+
+.time-meridian {
+  font-size: 12px;
+  color: #94A3B8;
+  font-weight: 500;
+}
+
+.duration-col {
+  color: #64748B !important;
+}
+
+.break-col {
+  color: #334155;
+  font-weight: 600 !important;
+  line-height: 1.4;
+}
+
+.break-label {
+  font-size: 12px;
+  color: #94A3B8;
+  font-weight: 500;
+}
+
+.tz-col {
+  color: #64748B !important;
+}
+
+.assigned-col {
+  color: #334155;
+  font-weight: 600 !important;
+  line-height: 1.4;
+}
+
+.assigned-label {
+  font-size: 12px;
+  color: #94A3B8;
+  font-weight: 500;
+}
+
+/* Custom Day/Night Badge Styles */
+.shift-type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 9999px; /* Pill */
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.badge-day {
+  background-color: #F1F5F9;
+  color: #475569;
+}
+
+.badge-night {
+  background-color: #EEF2FF;
+  color: #4F46E5;
+}
+
+/* Action Icons */
+.shift-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.shift-icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #94A3B8;
+  padding: 6px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shift-icon-btn:hover {
+  background-color: #F1F5F9;
+  color: #4F46E5;
+}
+
+.shift-icon-btn.delete-btn:hover {
+  background-color: #FEE2E2;
+  color: #EF4444;
+}
+
+/* Pagination Specific */
+.shift-pagination-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  border-top: 1px solid #F1F5F9;
+}
+
+.shift-pagination-wrapper .page-nav-btn {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #EA580C; /* Using orange for standard active text references per UI */
+  background: transparent;
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+  padding: 6px 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.shift-pagination-wrapper .page-nav-btn:hover {
+  background: #FFF7ED;
+  border-color: #FDBA74;
+}

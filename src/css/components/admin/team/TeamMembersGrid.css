@@ -1,0 +1,200 @@
+.team-members-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.team-member-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Header Config */
+.member-card-header {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.member-avatar-box {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.member-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #F1F5F9;
+}
+
+.member-status-dot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+}
+
+.member-info-basic {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1; /* Pushes content but allows absolute badge */
+  padding-right: 60px; /* Leave space for absolute badge */
+}
+
+.member-name {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0F172A;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.member-role {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 12px;
+  color: #64748B;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Status Config */
+.member-status-badge {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 4px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.5px;
+}
+
+/* Dynamics */
+.status-present { background-color: #DCFCE7; color: #16A34A; }
+.status-wfh { background-color: #FFF7ED; color: #EA580C; }
+.status-leave { background-color: #FEE2E2; color: #DC2626; }
+
+/* Tags Row */
+.member-tags-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.member-tag {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.tag-muted { background-color: #F8FAFC; color: #94A3B8; border: 1px solid #E2E8F0; }
+.tag-orange { background-color: #FFF7ED; color: #EA580C; border: 1px solid #FFEDD5; }
+
+/* Time Tracking */
+.member-time-info {
+  margin-bottom: 24px;
+  min-height: 40px; /* Reserve space preventing jitter */
+}
+
+.shift-coverage-header, .leave-return-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.time-label {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #94A3B8;
+}
+
+.time-val {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.return-date-val {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  color: #1E293B;
+}
+
+.shift-progress-track {
+  width: 100%;
+  height: 4px;
+  background-color: #F1F5F9;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.shift-progress-fill {
+  height: 100%;
+  border-radius: 2px;
+}
+
+.fill-green { background-color: #16A34A; }
+.fill-orange { background-color: #FDBA74; }
+
+/* Actions Footer */
+.member-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 1px solid #F1F5F9;
+  margin-top: auto; /* Push to bottom if height grows */
+}
+
+.footer-divider {
+  width: 1px;
+  height: 16px;
+  background-color: #F1F5F9;
+}
+
+.member-action-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #94A3B8;
+  padding: 6px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-action-btn:hover {
+  background-color: #F8FAFC;
+  color: #4F46E5;
+}
+
+@media (max-width: 1600px) {
+  .team-members-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 900px) {
+  .team-members-grid { grid-template-columns: 1fr; }
+}

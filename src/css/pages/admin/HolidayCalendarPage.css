@@ -1,0 +1,58 @@
+.holiday-calendar-page {
+  padding: 24px;
+  background-color: #F8FAFC;
+  min-height: calc(100vh - 64px);
+}
+
+.holiday-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.holiday-title-section h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 4px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.holiday-title-section p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+.btn-add-holiday {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #ea580c; /* Orange color matching design */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-add-holiday:hover {
+  background-color: #c2410c;
+}
+
+.holiday-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .holiday-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+}

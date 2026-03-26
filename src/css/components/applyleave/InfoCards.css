@@ -1,0 +1,95 @@
+.info-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+}
+
+.info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px 20px;
+    border: 1px solid transparent;
+}
+
+.info-icon {
+    margin-top: 2px;
+}
+
+.info-content-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.info-message {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* Blue Accent */
+.card-blue {
+    background-color: #EFF6FF;
+    border-color: #DBEAFE;
+}
+
+.icon-blue {
+    color: #2563EB;
+}
+
+.text-blue {
+    color: #1E3A8A;
+}
+
+.text-blue-muted {
+    color: #3B82F6;
+}
+
+/* Yellow/Amber Accent */
+.card-yellow {
+    background-color: #FFFBEB;
+    border-color: #FEF3C7;
+}
+
+.icon-yellow {
+    color: #D97706;
+}
+
+.text-yellow {
+    color: #92400E;
+}
+
+.text-yellow-muted {
+    color: #B45309;
+}
+
+/* Green Accent */
+.card-green {
+    background-color: #F0FDF4;
+    border-color: #DCFCE7;
+}
+
+.icon-green {
+    color: #16A34A;
+}
+
+.text-green {
+    color: #14532D;
+}
+
+.text-green-muted {
+    color: #22C55E;
+}
+
+@media (max-width: 768px) {
+    .info-cards-container {
+        grid-template-columns: 1fr;
+    }
+}

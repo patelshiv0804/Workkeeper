@@ -1,0 +1,185 @@
+.holiday-table-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.holiday-table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.holiday-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.holiday-table th {
+  padding: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #64748b;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+.holiday-table td {
+  padding: 16px;
+  font-size: 14px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.holiday-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.holiday-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.holiday-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.holiday-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dot-public { background-color: #ef4444; }
+.dot-company { background-color: #ea580c; }
+.dot-regional { background-color: #22c55e; }
+.dot-inactive { background-color: #94a3b8; }
+
+.holiday-type-badge {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.holiday-type-public {
+  background-color: #fee2e2;
+  color: #ef4444;
+}
+
+.holiday-type-company {
+  background-color: #ffedd5;
+  color: #ea580c;
+}
+
+.holiday-type-regional {
+  background-color: #dcfce7;
+  color: #22c55e;
+}
+
+.holiday-units-cell {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-width: 200px;
+}
+
+.holiday-unit-tag {
+  background-color: #f1f5f9;
+  color: #475569;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.holiday-desc-cell {
+  color: #64748b;
+  max-width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.holiday-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #94a3b8;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-btn:hover {
+  background-color: #f1f5f9;
+  color: #4f46e5;
+}
+
+.action-btn.delete:hover {
+  color: #ef4444;
+}
+
+/* Pagination Adjustments for Holiday Table Footer */
+.holiday-table-footer {
+  padding: 16px;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.holiday-footer-text {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.holiday-pagination-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.holiday-page-btn {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+}
+
+.holiday-page-btn:hover:not(:disabled) {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.holiday-page-btn.active-page {
+  background-color: #ea580c; /* Orange matching design */
+  color: white;
+  border-color: #ea580c;
+}
+
+.holiday-page-btn.active-page:hover {
+  background-color: #c2410c;
+}

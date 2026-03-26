@@ -1,0 +1,170 @@
+.admin-leave-table-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.leave-table-wrapper {
+  overflow-x: auto;
+  padding: 0 24px;
+}
+
+.leave-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 1050px;
+}
+
+.leave-data-table th {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748B;
+  text-transform: uppercase;
+  padding: 16px 8px;
+  border-bottom: 1px solid #E2E8F0;
+  letter-spacing: 0.5px;
+}
+
+.leave-data-table td {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155;
+  padding: 16px 8px;
+  border-bottom: 1px solid #F1F5F9;
+  vertical-align: middle;
+}
+
+.leave-data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.leave-emp-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.leave-emp-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #1E293B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.leave-emp-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.leave-emp-name {
+  font-weight: 700;
+  color: #0F172A;
+}
+
+.leave-emp-desig {
+  font-size: 12px;
+  color: #94A3B8;
+  font-weight: 400;
+}
+
+.leave-type-col {
+  font-weight: 600 !important;
+  color: #334155 !important;
+  line-height: 1.4;
+}
+
+.leave-date-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.leave-date-range {
+    font-weight: 600;
+    color: #1E293B;
+}
+
+.leave-duration {
+    font-size: 13px;
+    color: #94A3B8;
+}
+
+.leave-reason-col {
+  color: #64748B !important;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.leave-applied-col {
+  color: #64748B !important;
+}
+
+.leave-action-buttons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.leave-icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.approve-btn {
+  color: #22C55E;
+}
+
+.approve-btn:hover {
+  background-color: #DCFCE7;
+}
+
+.reject-btn {
+  color: #EF4444;
+}
+
+.reject-btn:hover {
+  background-color: #FEE2E2;
+}
+
+.view-btn {
+  color: #F59E0B;
+}
+
+.view-btn:hover {
+  background-color: #FEF3C7;
+}
+
+/* Pagination Specific Styles inside Leave */
+.leave-pagination-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-top: 1px solid #F1F5F9;
+}
+
+.leave-pagination-wrapper .page-nav-btn {
+    width: auto;
+    padding: 0 16px;
+}

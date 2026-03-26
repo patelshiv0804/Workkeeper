@@ -1,0 +1,135 @@
+.admin-shift-filters-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Align button with the inputs laterally */
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.shift-filters-left {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.shift-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.shift-filter-group label {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #94A3B8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.shift-search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 10px 16px;
+  width: 200px;
+  transition: all 0.2s ease;
+}
+
+.shift-search-box:focus-within {
+  border-color: #EA580C;
+  box-shadow: 0 0 0 2px rgba(234, 88, 12, 0.1);
+}
+
+.search-icon {
+  color: #94A3B8;
+}
+
+.shift-search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #334155;
+  width: 100%;
+}
+
+.shift-search-input::placeholder {
+  color: #94A3B8;
+}
+
+.shift-filter-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #EA580C; /* Spec requests orange text logic inside drops */
+  cursor: pointer;
+  background-color: #FFFFFF;
+  transition: all 0.2s ease;
+}
+
+.shift-filter-dropdown.type-drop { min-width: 180px; }
+.shift-filter-dropdown.tz-drop { min-width: 240px; }
+
+.shift-filter-dropdown:hover {
+  background-color: #FFF7ED;
+  border-color: #FDBA74;
+}
+
+.filter-chevron {
+  color: #EA580C;
+}
+
+.shift-filters-right {
+  display: flex;
+  align-items: center;
+}
+
+.shift-filter-apply-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 8px;
+  background-color: #EA580C; /* Primary branding orange */
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgba(234, 88, 12, 0.2);
+}
+
+.shift-filter-apply-btn:hover {
+  background-color: #C2410C;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1024px) {
+  .admin-shift-filters-card {
+    align-items: flex-start;
+  }
+  .shift-filters-right {
+    margin-top: 16px;
+    width: 100%;
+  }
+  .shift-filter-apply-btn { width: 100%; }
+}

@@ -1,0 +1,23 @@
+.leave-balance-page {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.lb-header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.lb-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.lb-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}

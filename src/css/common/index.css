@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg-color: #F8FAFC;
+  --bg-white: #FFFFFF;
+  --primary: #4F46E5; /* Indigo */
+  --primary-hover: #4338CA;
+  --orange: #F97316; /* From screenshot */
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --danger: #EF4444;
+  --sidebar-bg: #111827; /* Very dark blue for sidebar */
+  --sidebar-text: #9CA3AF;
+  --sidebar-active-text: #FFFFFF;
+  --sidebar-active-bg: rgba(255, 255, 255, 0.05);
+  --text-main: #111827;
+  --text-muted: #6B7280;
+  --border-color: #E5E7EB;
+  
+  --font-family: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base Utility Classes */
+.card {
+  background-color: var(--bg-white);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* soft shadow */
+}
+
+/* Layout Container */
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-content-wrapper {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-scroll-area {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 24px 32px;
+}
+
+/* Button Reset */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}

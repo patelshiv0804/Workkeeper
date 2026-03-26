@@ -1,0 +1,6 @@
+.notifications-page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: calc(100vh - 72px - 64px); /* Account for header and padding */
+}

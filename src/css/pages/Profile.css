@@ -1,0 +1,35 @@
+.profile-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.profile-layout-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  align-items: start;
+}
+
+.profile-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.profile-right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .profile-layout-grid {
+    grid-template-columns: 1fr;
+  }
+}

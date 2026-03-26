@@ -1,0 +1,29 @@
+.exit-process-page {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 32px 0;
+}
+
+.exit-process-header {
+  margin-bottom: 24px;
+}
+
+.exit-process-header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.02em;
+}
+
+.exit-process-header p {
+  font-size: 15px;
+  color: #64748b;
+  margin: 0;
+}
+
+.exit-process-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

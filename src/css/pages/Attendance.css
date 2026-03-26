@@ -1,0 +1,40 @@
+.attendance-page {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 40px;
+}
+
+.attend-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.attend-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 6px;
+}
+
+.attend-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.attend-top-grid {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 24px;
+}
+
+.attend-bottom-section {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+    .attend-top-grid {
+        grid-template-columns: 1fr;
+    }
+}

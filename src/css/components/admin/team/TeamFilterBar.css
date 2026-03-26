@@ -1,0 +1,98 @@
+.team-filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.team-filter-chips {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.team-chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 9999px; /* Fully rounded pill */
+  padding: 8px 16px;
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.team-chip:hover {
+  background-color: #F8FAFC;
+  border-color: #CBD5E1;
+}
+
+.chip-prefix {
+  color: #EA580C; /* Matching primary design orange focus */
+  font-weight: 700;
+}
+
+.chip-icon-orange {
+  color: #EA580C;
+}
+
+.chip-chevron {
+  color: #94A3B8;
+  margin-left: 4px;
+}
+
+/* View Toggles */
+.team-view-toggles {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.view-label {
+  font-family: 'Inter', 'Poppins', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #64748B;
+}
+
+.toggle-group {
+  display: flex;
+  align-items: center;
+  background-color: #F1F5F9;
+  border-radius: 6px;
+  padding: 4px;
+}
+
+.view-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94A3B8;
+  transition: all 0.2s ease;
+}
+
+.view-btn.active {
+  background-color: #FFFFFF;
+  color: #EA580C;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .team-filter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

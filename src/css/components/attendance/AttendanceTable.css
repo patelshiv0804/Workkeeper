@@ -1,0 +1,215 @@
+.attendance-table-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.table-header-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.table-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.toggle-group {
+    display: flex;
+    background-color: var(--bg-white);
+    border-radius: 6px;
+    padding: 2px;
+    border: 1px solid var(--border-color);
+}
+
+.toggle-btn {
+    padding: 6px 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    border-radius: 4px;
+    transition: all 0.2s;
+    background: transparent;
+}
+
+.toggle-btn.active {
+    background-color: var(--orange);
+    color: white;
+    box-shadow: 0 1px 3px rgba(249, 115, 22, 0.2);
+}
+
+.attendance-date-range {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+}
+
+.mini-datepicker-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 140px; /* Keeping it not too wide */
+}
+
+/* Ensure react-datepicker wrapper takes full relative space */
+.mini-datepicker-wrapper .react-datepicker-wrapper,
+.mini-datepicker-wrapper .react-datepicker__input-container {
+    width: 100%;
+    display: block;
+}
+
+.mini-datepicker-input {
+    width: 100%;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-white);
+    border-radius: 6px;
+    padding: 6px 12px;
+    padding-left: 32px; /* Space for the calendar icon on the left */
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-main);
+    outline: none;
+    transition: all 0.2s;
+}
+
+.mini-datepicker-input:focus {
+    border-color: var(--orange);
+    box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.1);
+}
+
+.input-icon-left {
+    position: absolute;
+    left: 10px;
+    pointer-events: none;
+}
+
+.date-separator {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 500;
+}
+
+/* Base Datepicker Styling for Orange Theme */
+.react-datepicker__day--selected, 
+.react-datepicker__day--in-selecting-range, 
+.react-datepicker__day--in-range, 
+.react-datepicker__month-text--selected, 
+.react-datepicker__month-text--in-selecting-range, 
+.react-datepicker__month-text--in-range, 
+.react-datepicker__year-text--selected, 
+.react-datepicker__year-text--in-selecting-range, 
+.react-datepicker__year-text--in-range {
+    background-color: var(--orange) !important;
+}
+
+.react-datepicker__day--keyboard-selected, 
+.react-datepicker__month-text--keyboard-selected, 
+.react-datepicker__year-text--keyboard-selected {
+    background-color: #fb923c !important;
+}
+
+.date-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.date-main {
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.date-sub {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.source-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 10px;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.icon-margin {
+    margin-right: 6px;
+}
+
+.text-muted {
+    color: var(--text-muted);
+}
+
+.status-badge-lg {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+    min-width: 80px;
+}
+
+.badge-green {
+    background-color: #DCFCE7;
+    color: #166534;
+}
+
+.badge-yellow {
+    background-color: #FEF3C7;
+    color: #B45309;
+}
+
+.badge-red {
+    background-color: #FEE2E2;
+    color: #991B1B;
+}
+
+.badge-blue {
+    background-color: #DBEAFE;
+    color: #1E3A8A;
+}
+
+.badge-gray {
+    background-color: #F3F4F6;
+    color: #4B5563;
+}
+
+.table-footer-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+.btn-outline-orange {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--orange);
+    background-color: transparent;
+    color: var(--orange);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.2s;
+}
+
+.btn-outline-orange:hover {
+    background-color: #FFF7ED;
+}

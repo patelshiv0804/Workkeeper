@@ -1,0 +1,91 @@
+.recent-activity-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.ra-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 4px;
+}
+
+.ra-title-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.ra-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.ra-subtitle {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.ra-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--orange);
+    text-decoration: none;
+}
+
+.ra-link:hover {
+    text-decoration: underline;
+}
+
+.ra-table-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Custom Table Styles matching screenshot */
+.font-semibold {
+    font-weight: 600;
+}
+
+.text-main {
+    color: var(--text-main);
+}
+
+.align-center {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.status-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-green {
+    background-color: #16A34A;
+}
+
+.dot-blue {
+    background-color: #2563EB;
+}
+
+/* Reuse existing status badge styles but add light borders if needed */
+.badge-green {
+    background-color: #F0FDF4;
+    /* Very light green */
+    color: #166534;
+    border: 1px solid #DCFCE7;
+}
+
+.badge-blue {
+    background-color: #EFF6FF;
+    /* Very light blue */
+    color: #1E40AF;
+    border: 1px solid #DBEAFE;
+}

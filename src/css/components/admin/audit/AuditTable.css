@@ -1,0 +1,243 @@
+.audit-table-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+.audit-table-container {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.audit-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.audit-table th {
+  padding: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #64748b;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: transparent;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+}
+
+.audit-table td {
+  padding: 16px;
+  font-size: 13px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.audit-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.audit-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.audit-table-name {
+  font-weight: 600;
+  color: #1e293b;
+  white-space: nowrap;
+}
+
+.audit-record-id {
+  color: #64748b;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Action Badges */
+.audit-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.audit-badge::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.badge-insert {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+.badge-insert::before { background-color: #16a34a; }
+
+.badge-update {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+.badge-update::before { background-color: #d97706; }
+
+.badge-delete {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
+.badge-delete::before { background-color: #dc2626; }
+
+/* Performed By User Info */
+.audit-user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.audit-user-avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.audit-user-name {
+  font-weight: 500;
+  color: #1e293b;
+  white-space: nowrap;
+}
+
+/* Timestamp */
+.audit-timestamp {
+  color: #64748b;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Value Columns (Old/New) */
+.audit-value-cell {
+  max-width: 200px;
+}
+
+.audit-code-block {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', Courier, monospace;
+  font-size: 12px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+}
+
+.audit-code-block.bg-gray {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.audit-code-block.bg-red-light {
+  background-color: #fee2e2;
+  color: #dc2626;
+  text-decoration: line-through;
+}
+
+.audit-code-block.bg-green-light {
+  background-color: #dcfce7;
+  color: #16a34a;
+}
+
+.audit-text-muted {
+  color: #94a3b8;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.audit-text-danger {
+  color: #dc2626;
+  font-size: 12px;
+}
+
+/* Pagination Adjustments for Audit Table Footer */
+.audit-table-footer {
+  padding: 16px;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.audit-footer-text {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.audit-pagination-btns {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.audit-page-btn {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  min-width: 32px;
+  height: 32px;
+  padding: 0 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.audit-page-btn:hover:not(:disabled) {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.audit-page-btn.active-page {
+  background-color: #ea580c; /* Orange matching design */
+  color: white;
+  border-color: #ea580c;
+}
+
+.audit-page-btn.active-page:hover {
+  background-color: #c2410c;
+}
+
+.audit-page-ellipsis {
+  color: #64748b;
+  padding: 0 4px;
+}
+
+.audit-nav-btn {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  color: #64748b;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.audit-nav-btn:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
