@@ -115,9 +115,9 @@ const NotificationsFilterBar = () => {
         </div>
       </div>
       
-      <button className="btn-filter-icon" title="More Filters">
+      {/* <button className="btn-filter-icon" title="More Filters">
         <SlidersHorizontal size={18} />
-      </button>
+      </button> */}
     </div>
   );
 };

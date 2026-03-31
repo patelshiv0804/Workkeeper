@@ -42,7 +42,7 @@
 }
 
 .notifications-search-box input:focus {
-  border-color: #4f46e5;
+  border-color: #EA580C;
 }
 
 .notifications-dropdown {
@@ -64,7 +64,7 @@
 }
 
 .notifications-dropdown select:focus {
-  border-color: #4f46e5;
+  border-color: #EA580C;
 }
 
 .notifications-dropdown-icon {
