@@ -23,6 +23,7 @@ import RolesPermissionsPage from './pages/admin/RolesPermissionsPage';
 import AuditLogsPage from './pages/admin/AuditLogsPage';
 import NotificationsPage from './pages/admin/NotificationsPage';
 import ExitManagementPage from './pages/admin/ExitManagementPage';
+import Holidays from './pages/Holidays';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
       <Route path="/leave" element={<DashboardLayout><ApplyLeave /></DashboardLayout>} />
       <Route path="/leave-balance" element={<DashboardLayout><LeaveBalance /></DashboardLayout>} />
       <Route path="/punch-records" element={<DashboardLayout><PunchRecords /></DashboardLayout>} />
+      <Route path="/holidays" element={<DashboardLayout><Holidays /></DashboardLayout>} />
       <Route path="/reports" element={<DashboardLayout><Reports /></DashboardLayout>} />
       <Route path="/notifications" element={<DashboardLayout><Notifications /></DashboardLayout>} />
       <Route path="/profile" element={<DashboardLayout><Profile /></DashboardLayout>} />

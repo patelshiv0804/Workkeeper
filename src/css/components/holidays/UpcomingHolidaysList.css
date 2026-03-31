@@ -1,0 +1,139 @@
+.upcoming-holidays-list-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f5f9;
+    height: 100%;
+}
+
+.uhl-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.uhl-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.uhl-view-all {
+    font-size: 14px;
+    font-weight: 600;
+    color: #EA580C;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.uhl-view-all:hover {
+    color: #EA580C;
+    text-decoration: underline;
+}
+
+.uhl-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.uhl-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid #f1f5f9;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.uhl-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.uhl-item-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.uhl-icon-box {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.uhl-item-details h4 {
+    margin: 0 0 4px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.uhl-item-details p {
+    margin: 0;
+    font-size: 13px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.uhl-item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.uhl-badge {
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.uhl-location {
+    font-size: 12px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* Colors based on type */
+.uhl-bg-public { background-color: #fee2e2; }
+.uhl-icon-public { color: #ef4444; }
+.uhl-badge-public { background-color: #fee2e2; color: #ef4444; }
+
+.uhl-bg-company { background-color: #ffedd5; }
+.uhl-icon-company { color: #f97316; }
+.uhl-badge-company { background-color: #ffedd5; color: #f97316; }
+
+.uhl-bg-regional { background-color: #dcfce7; }
+.uhl-icon-regional { color: #22c55e; }
+.uhl-badge-regional { background-color: #dcfce7; color: #22c55e; }
+
+@media (max-width: 640px) {
+    .uhl-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    
+    .uhl-item-right {
+        align-items: flex-start;
+        padding-left: 64px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 0;
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { LayoutDashboard, Clock, Calendar, CalendarRange, ListTodo, FileText, Bell, User, LogOut } from 'lucide-react';
+import { LayoutDashboard, Clock, Calendar, CalendarDays, CalendarRange, ListTodo, FileText, Bell, User, LogOut } from 'lucide-react';
 import '../../css/components/Sidebar.css';
 
 const Sidebar = () => {
@@ -37,6 +37,8 @@ const Sidebar = () => {
             <span>Leave Balance</span>
           </NavLink>
 
+
+
           <NavLink to="/punch-records" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>
             <ListTodo size={20} />
             <span>Punch Records</span>
@@ -45,6 +47,11 @@ const Sidebar = () => {
           <NavLink to="/reports" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>
             <FileText size={20} />
             <span>Reports</span>
+          </NavLink>
+
+          <NavLink to="/holidays" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>
+            <CalendarDays size={20} />
+            <span>Holidays</span>
           </NavLink>
 
           <NavLink to="/notifications" className={({ isActive }) => isActive ? 'nav-item active' : 'nav-item'}>

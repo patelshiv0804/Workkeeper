@@ -1,0 +1,34 @@
+.holidays-page {
+    /* padding: 24px; */
+    background-color: #F8FAFC;
+    min-height: 100vh;
+}
+
+.holidays-header {
+    margin-bottom: 24px;
+}
+
+.holidays-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 8px 0;
+}
+
+.holidays-subtitle {
+    font-size: 14px;
+    color: #64748b;
+    margin: 0;
+}
+
+.holidays-main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    gap: 24px;
+}
+
+@media (max-width: 1024px) {
+    .holidays-main-grid {
+        grid-template-columns: 1fr;
+    }
+}
