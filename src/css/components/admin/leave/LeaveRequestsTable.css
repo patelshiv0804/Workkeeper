@@ -25,14 +25,14 @@
   font-family: 'Inter', 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: #4F46E5;
+  color: #ff982d;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .view-all-link:hover {
   text-decoration: underline;
-  color: #3730A3;
+  color: #EA580C;
 }
 
 .table-wrapper {

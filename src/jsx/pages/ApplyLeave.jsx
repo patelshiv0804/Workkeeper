@@ -2,7 +2,7 @@ import React from 'react';
 import '../../css/pages/ApplyLeave.css';
 import LeaveFormCard from '../components/applyleave/LeaveFormCard';
 import InfoCards from '../components/applyleave/InfoCards';
-import FloatingTip from '../components/applyleave/FloatingTip';
+// import FloatingTip from '../components/applyleave/FloatingTip';
 
 const ApplyLeave = () => {
     return (
@@ -19,7 +19,7 @@ const ApplyLeave = () => {
                 </div>
 
             </div>
-            <FloatingTip />
+            {/* <FloatingTip /> */}
         </div>
     );
 };

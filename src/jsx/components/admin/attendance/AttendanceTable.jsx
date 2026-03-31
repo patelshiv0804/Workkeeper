@@ -8,7 +8,7 @@ const AttendanceTable = () => {
   const records = [
     {
       id: 1,
-      date: '24 Oct, 2023',
+      date: '24 Oct, 2025',
       name: 'Sarah Jenkins',
       avatar: 'SJ',
       avatarColor: '#FDBA74',
@@ -22,7 +22,7 @@ const AttendanceTable = () => {
     },
     {
       id: 2,
-      date: '24 Oct, 2023',
+      date: '24 Oct, 2025',
       name: 'Michael Chen',
       avatar: 'MC',
       avatarColor: '#FDBA74',
@@ -36,7 +36,7 @@ const AttendanceTable = () => {
     },
     {
       id: 3,
-      date: '24 Oct, 2023',
+      date: '24 Oct, 2025',
       name: 'Emily Rodriguez',
       avatar: 'ER',
       avatarColor: '#FDE68A',
@@ -50,7 +50,7 @@ const AttendanceTable = () => {
     },
     {
       id: 4,
-      date: '24 Oct, 2023',
+      date: '24 Oct, 2025',
       name: 'David Wilson',
       avatar: 'DW',
       avatarColor: '#A7F3D0',
@@ -64,7 +64,7 @@ const AttendanceTable = () => {
     },
     {
       id: 5,
-      date: '23 Oct, 2023',
+      date: '23 Oct, 2025',
       name: 'Jessica Lee',
       avatar: 'JL',
       avatarColor: '#6EE7B7',

@@ -236,7 +236,9 @@
 }
 
 .action-btn.primary:hover {
-  background-color: #c2410c;
+  background-color: white;
+  color: #c2410c;
+  border: 1px solid #ef4444;
 }
 
 .action-btn.secondary {

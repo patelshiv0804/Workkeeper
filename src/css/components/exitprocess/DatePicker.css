@@ -1,4 +1,6 @@
 .date-picker-wrapper {
+  display: flex;
+    align-items: anchor-center;
   position: relative;
   width: 100%;
 }

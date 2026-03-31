@@ -5,7 +5,7 @@ import '../../../../css/components/admin/attendance/AttendanceFilters.css';
 import { Calendar, ChevronDown, Download, FileText, ChevronLeft, ChevronRight } from 'lucide-react';
 
 const AttendanceFilters = () => {
-  const [selectedDate, setSelectedDate] = useState(new Date('2023-10-24'));
+  const [selectedDate, setSelectedDate] = useState(new Date('2025-10-24'));
 
   const months = [
     "March", "April", "May", "June", "July", "August", 

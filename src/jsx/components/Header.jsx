@@ -19,7 +19,8 @@ const Header = () => {
                 <div className="user-profile">
                     <div className="user-info">
                         <h4 className="user-name">Alex Johnson</h4>
-                        <p className="user-role">EMPLOYEE</p>
+                        {/* <p className="user-role">EMPLOYEE</p> */}
+                        <p className="user-role">ADMIN</p> 
                     </div>
                     <div className="user-avatar">
                         <img src="https://ui-avatars.com/api/?name=Alex+Johnson&background=F97316&color=fff" alt="Alex Johnson" />
