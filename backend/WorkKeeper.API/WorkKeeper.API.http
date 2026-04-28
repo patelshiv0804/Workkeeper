@@ -1,0 +1,6 @@
+@WorkKeeper.API_HostAddress = http://localhost:5084
+
+GET {{WorkKeeper.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
